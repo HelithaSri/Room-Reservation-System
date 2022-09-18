@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="980.0" prefWidth="1155.0" stylesheets="@../styles/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HotelPackageFormController">
+   <children>
+      <Label layoutX="480.0" layoutY="100.0" styleClass="titleTxt" text="Room Plans" />
+      <Label layoutX="490.0" layoutY="565.0" styleClass="titleTxt" text="Meal Plans" />
+      <TableView layoutX="39.0" layoutY="639.0" prefHeight="201.0" prefWidth="1076.0">
+        <columns>
+          <TableColumn prefWidth="203.0" text="Meal Type" />
+          <TableColumn prefWidth="321.0" text="Menu Type" />
+            <TableColumn prefWidth="360.0" text="Availability" />
+            <TableColumn prefWidth="191.0" text="Price (Rs.)" />
+        </columns>
+      </TableView>
+      <TableView layoutX="8.0" layoutY="164.0" prefHeight="359.0" prefWidth="1140.0">
+         <columns>
+            <TableColumn prefWidth="154.0" text="Room Type" />
+            <TableColumn prefWidth="115.0" text="# of Rooms" />
+            <TableColumn prefWidth="180.0" text="Availability" />
+            <TableColumn prefWidth="461.0" text="Extra Facilitys" />
+            <TableColumn prefWidth="165.0" text="Price (Rs.)" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

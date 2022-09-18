@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="869.0" prefWidth="1155.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AnnuallyFormController">
+   <children>
+      <Label layoutX="454.0" layoutY="25.0" text="Annually Report">
+         <font>
+            <Font name="Roboto Medium" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

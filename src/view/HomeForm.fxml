@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!---->
+
+<AnchorPane fx:id="dashBoardPane" prefHeight="1024.0" prefWidth="1663.0" style="-fx-background-radius: 20;" styleClass="bgGradient" stylesheets="@../styles/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="22.0" prefHeight="980.0" prefWidth="439.0" styleClass="root">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="361.0" layoutX="39.0" layoutY="17.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/png/h2%20blue%20Ocean.png" />
+               </image>
+            </ImageView>
+            <ToggleButton fx:id="btnDashBoard" layoutX="47.0" layoutY="155.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Dash Board">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="menuBtn" />
+               </toggleGroup>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <padding>
+                  <Insets left="-1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="btnBookingRoom" layoutX="46.0" layoutY="300.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Booking Room" toggleGroup="$menuBtn">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <padding>
+                  <Insets left="45.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="btnCustomerDetails" layoutX="47.0" layoutY="454.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Customer Details" toggleGroup="$menuBtn">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="80.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="btnPackages" layoutX="46.0" layoutY="599.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Packages" toggleGroup="$menuBtn">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <padding>
+                  <Insets left="-21.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="btnLogOut" layoutX="47.0" layoutY="739.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Log Out" toggleGroup="$menuBtn">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <padding>
+                  <Insets left="-50.0" />
+               </padding>
+            </ToggleButton>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="77.0" layoutY="172.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/dashboard.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="78.0" layoutY="311.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/Booking.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="78.0" layoutY="466.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/cus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="77.0" layoutY="616.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/pacages.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="78.0" layoutY="749.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/log%20out%20b.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="107.0" layoutY="932.0" text="Design &amp; Developed By Helitha Sri">
+               <font>
+                  <Font name="Roboto Medium" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="context" layoutX="474.0" layoutY="22.0" prefHeight="980.0" prefWidth="1155.0" styleClass="root" />
+   </children>
+</AnchorPane>

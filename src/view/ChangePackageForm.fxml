@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="980.0" prefWidth="1155.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChangePackageFormController">
+   <children>
+      <Label layoutX="480.0" layoutY="50.0" text="Room Plans">
+         <font>
+            <Font name="Roboto Medium" size="36.0" />
+         </font>
+      </Label>
+      <TableView layoutX="8.0" layoutY="112.0" prefHeight="390.0" prefWidth="1140.0">
+        <columns>
+          <TableColumn prefWidth="167.66665649414062" text="Room Type" />
+          <TableColumn prefWidth="119.66667175292969" text="# of Rooms" />
+            <TableColumn prefWidth="130.0" text="Availability" />
+            <TableColumn prefWidth="380.6666259765625" text="Extra Facilitys" />
+            <TableColumn minWidth="0.0" prefWidth="129.3333740234375" text="Price(Rs.)" />
+            <TableColumn prefWidth="215.0" text="Action" />
+        </columns>
+      </TableView>
+      <Label layoutX="488.0" layoutY="560.0" text="Meal Plans">
+         <font>
+            <Font name="Roboto Medium" size="36.0" />
+         </font>
+      </Label>
+      <TableView layoutX="8.0" layoutY="622.0" prefHeight="308.0" prefWidth="1140.0">
+         <columns>
+            <TableColumn prefWidth="209.3333282470703" text="Meal Type" />
+            <TableColumn prefWidth="309.6666259765625" text="Menu Type" />
+            <TableColumn prefWidth="238.3333740234375" text="Availability" />
+            <TableColumn prefWidth="173.6666259765625" text="Price (Rs.)" />
+            <TableColumn minWidth="0.0" prefWidth="212.33331298828125" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

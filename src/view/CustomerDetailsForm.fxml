@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="980.0" prefWidth="1155.0" stylesheets="@../styles/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerDetailsFormController">
+   <children>
+      <JFXTextField labelFloat="true" layoutX="131.0" layoutY="133.0" prefHeight="44.0" prefWidth="328.0" promptText="Name" styleClass="fieldStyle" />
+      <JFXTextField labelFloat="true" layoutX="477.0" layoutY="133.0" prefHeight="44.0" prefWidth="328.0" promptText="NIC" styleClass="fieldStyle" />
+      <JFXButton buttonType="RAISED" layoutX="877.0" layoutY="125.0" prefHeight="60.75" prefWidth="173.0" styleClass="SearchBtn" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="24.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblCustomer" layoutX="8.0" layoutY="252.0" prefHeight="664.67" prefWidth="1140.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="200.3333282470703" text="Name" />
+          <TableColumn fx:id="colNic" minWidth="0.0" prefWidth="148.66665649414062" text="NIC" />
+            <TableColumn fx:id="colTpNo" minWidth="0.0" prefWidth="164.33334350585938" text="TP NO." />
+            <TableColumn fx:id="colRoomType" minWidth="0.0" prefWidth="142.00003051757812" text="Room Type" />
+            <TableColumn fx:id="colCheckIn" minWidth="0.0" prefWidth="142.00003051757812" text="Check In" />
+            <TableColumn fx:id="colCheckOut" minWidth="0.0" prefWidth="161.6666259765625" text="Check Out" />
+            <TableColumn fx:id="colCancel" minWidth="0.0" prefWidth="176.3333740234375" text="Cancle Reservation" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

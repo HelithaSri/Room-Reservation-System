@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1663.0" styleClass="bgGradient" stylesheets="@../styles/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHomeFormController">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="22.0" prefHeight="980.0" prefWidth="439.0" styleClass="root">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="361.0" layoutX="59.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/h2%20blue%20Ocean.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="106.0" layoutY="935.0" text="Design &amp; Developed By Helitha Sri">
+               <font>
+                  <Font name="Roboto Medium" size="15.0" />
+               </font>
+            </Label>
+            <ToggleButton fx:id="btnDashBoard" layoutX="48.0" layoutY="154.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Dash Board">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <padding>
+                  <Insets left="-2.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="menuBtnAdmin" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="btnIncomeReport" layoutX="47.0" layoutY="299.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Income Report" toggleGroup="$menuBtnAdmin">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <padding>
+                  <Insets left="41.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="btnCreateUsers" layoutX="48.0" layoutY="453.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Create Users" toggleGroup="$menuBtnAdmin">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="18.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="btnChangePackages" layoutX="47.0" layoutY="598.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Change Packages" toggleGroup="$menuBtnAdmin">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <padding>
+                  <Insets left="88.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="btnLogOut" layoutX="48.0" layoutY="738.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="89.0" prefWidth="394.0" styleClass="toggleBtn" text="Log Out" toggleGroup="$menuBtnAdmin">
+               <font>
+                  <Font name="Roboto Medium" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#00000022" height="13.5" offsetY="6.0" radius="3.125" spread="0.44" width="1.0" />
+               </effect>
+               <padding>
+                  <Insets left="-52.0" />
+               </padding>
+            </ToggleButton>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="78.0" layoutY="171.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/dashboard.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="79.0" layoutY="315.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/report.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="79.0" layoutY="479.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/users.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="79.0" layoutY="615.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/pacages.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="79.0" layoutY="748.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/png/log%20out%20b.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="admincontext" layoutX="474.0" layoutY="22.0" prefHeight="980.0" prefWidth="1155.0" styleClass="root" />
+   </children>
+</AnchorPane>
